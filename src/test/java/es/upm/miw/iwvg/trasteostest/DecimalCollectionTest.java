@@ -1,11 +1,12 @@
-package es.upm.miw.iwvg.junit;
+package es.upm.miw.iwvg.trasteostest;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import es.upm.miw.iwvg.junit.DecimalCollection;
+import es.upm.miw.iwvg.trasteos.DecimalCollection;
+
 
 public class DecimalCollectionTest {
     private DecimalCollection dc;

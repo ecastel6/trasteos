@@ -1,9 +1,11 @@
-package es.upm.miw.iwvg.junit;
+package es.upm.miw.iwvg.trasteostest;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import es.upm.miw.iwvg.trasteos.Point;
 
 public class PointTest {
     private Point pt;
