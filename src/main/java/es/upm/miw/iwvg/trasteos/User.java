@@ -1,4 +1,4 @@
-package es.upm.miw.spai.ecp2;
+package es.upm.miw.iwvg.trasteos;
 
 
 public class User {
@@ -39,5 +39,13 @@ public class User {
     public String getFamilyName() {
         return this.familyName;
     }
-
+    
+    public String getNameCapitalized() {
+    	return this.name.substring(0, 1).toUpperCase() + this.name.substring(1,this.name.length());  
+    }
+    public static void main (String [] args){
+    	User usr=new User(88,"Pepe","Carballo");
+    	System.out.println(usr.getNameCapitalized());
+    	
+    }
 }
