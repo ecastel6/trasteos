@@ -63,4 +63,14 @@ public class Fraction {
         return denominator;
     }
     
+    public boolean isProper(){
+        return getNumerator() < getDenominator();
+    }
+    
+    public static void main (String [] args){
+        Fraction sd = new Fraction (3,4);
+        System.out.print(sd.isProper());
+        
+    }
+    
 }
