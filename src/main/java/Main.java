@@ -8,6 +8,7 @@ public class Main {
     Point aPoint = new Point();
     Point bPoint = new Point(50, 25);
     Point cPoint = new Point(bPoint);
+    Point fPoint = new Point(bPoint); // somefixex
     
 //    System.out.println("cPoint is located at: " + cPoint);
     
