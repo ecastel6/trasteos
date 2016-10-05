@@ -1,4 +1,4 @@
-package es.upm.miw.spai.ecp2;
+package es.upm.miw.iwvg.trasteos;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,5 +36,11 @@ public class DecimalCollection {
         }
         return higher;
     }
-
+    public double multiply (){
+        double prod=1;
+        for (double item: this.collection){
+            prod *= item;
+        }
+        return prod;
+    }
 }

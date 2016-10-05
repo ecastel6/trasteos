@@ -1,4 +1,4 @@
-package es.upm.miw.spai.ecp2;
+package es.upm.miw.iwvg.trasteos;
 
 
 /**
@@ -61,6 +61,16 @@ public class Fraction {
 
     public int getDenominator() {
         return denominator;
+    }
+    
+    public boolean isProper(){
+        return getNumerator() < getDenominator();
+    }
+    
+    public static void main (String [] args){
+        Fraction sd = new Fraction (3,4);
+        System.out.print(sd.isProper());
+        
     }
     
 }
