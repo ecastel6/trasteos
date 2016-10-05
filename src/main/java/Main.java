@@ -2,29 +2,20 @@
 import java.awt.Point;
 
     
-    
 public class Main {
-  public static void main(String[] args) {
-    Point aPoint = new Point();
-    Point bPoint = new Point(50, 25);
-    Point cPoint = new Point(bPoint);
-    Point fPoint = new Point(bPoint); // somefixex
-    
-//    System.out.println("cPoint is located at: " + cPoint);
-    
-    System.out.println("aPoint is located at: " + aPoint);
-    aPoint.move(100, 50);
-    System.out.println("After move aPoint is now at: " + aPoint);
-//    bPoint.x = 110;
-//    bPoint.y = 70;
+    public static void getMethodame(final int depth)
+    {
+      final StackTraceElement[] ste = Thread.currentThread().getStackTrace();
 
-    aPoint.translate(10, 20);
-    System.out.println("After traslate aPoint is now at: " + aPoint);
-    
-    aPoint.move(-100, 50);
-    System.out.println("After new move aPoint is now at: " + aPoint);
+      //System. out.println(ste[ste.length-depth].getClassName()+"#"+ste[ste.length-depth].getMethodName());
+      // return ste[ste.length - depth].getMethodName();  //Wrong, fails for depth = 0
+      System.out.println(ste[ste.length - 1 - depth].getMethodName());
 
-//    if (aPoint.equals(bPoint))
-//      System.out.println("aPoint and bPoint are at the same location.");
+    }    
+
+    public static void main(String[] args) {
+        
+      getMethodame(1);
   }
+  
 }
